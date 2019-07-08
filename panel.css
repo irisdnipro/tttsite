@@ -1,0 +1,183 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+
+body {
+    font-family:Arial;
+    font-size:16px;
+    background: #e6e6fa;
+}
+ 
+/*/ * Мы удаляем поля, отступы и стиль списка компонентов UL и LI * /*/
+#menuwrapper ul, #menuwrapper ul li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ 
+/* Мы перемещаем список li влево, применяем цвет фона 
+и границу справа белый и устанавливаем высоту 25 пикселей. 
+Обратите внимание, что вы можете игнорировать высоту, 
+если вы не хотите
+*/
+#menuwrapper ul li{
+    float:left;
+    background-color:#7f95db;
+    border-right:solid 1px white;
+    height:55px;
+    line-height:55px;
+    width: 30%;
+}
+ 
+/* Мы применяем цвет наведения фона, когда пользователь наводит указатель мыши на компонент li*/
+#menuwrapper ul li:hover{
+    background-color:#6679e9;
+    position:relative;
+
+}
+ 
+/* Мы применяем стиль ссылки */
+#menuwrapper ul li a{
+    padding:0px 15px;
+    color:#ffffff;
+    display:inline-block;
+    text-decoration:none;
+
+}
+ 
+/**** SECOND LEVEL MENU ****/
+/* Мы устанавливаем абсолютное положение для всплывающего меню и скрываем ul, пока пользователь не наведет курсор на родительский элемент li.*/
+#menuwrapper ul li ul{
+    position:absolute;
+    display:none;
+}
+ 
+/*Когда пользователь наведет курсор на элемент li, мы показываем список ul, применяя display: block, note: 25px - высота меню.*/
+#menuwrapper ul li:hover ul{
+    left:0;
+    top:55px;
+    display:block;
+
+}
+ 
+/* Так как родительский объект li имеет свойство float: left, мы перезаписываем подменю (уровень 2), чтобы оно не плавало (нормальная позиция).*/
+#menuwrapper ul li ul li{
+    white-space: nowrap;
+    float:none;
+    width: 250px;
+    background-color:#cae25a;
+}
+ 
+/* We change the background color for the level 2 submenu when hovering the menu */
+#menuwrapper ul li:hover ul li:hover{
+    background-color:#b1b536;
+}
+ 
+/* We style the color of level 2 links */
+#menuwrapper ul li ul li a{
+    color:#454444;
+    display:inline-block;
+    /*width:120px;*/
+}
+ 
+/**** THIRD LEVEL MENU ****/
+/* We need to hide the 3rd menu, when hovering the first level menu */
+#menuwrapper ul li:hover ul li ul{
+    position:absolute;
+    display:none;
+}
+ 
+/* We show the third level menu only when they hover the second level menu parent */
+#menuwrapper ul li:hover ul li:hover ul{
+    display:block;
+    left:150px;
+    top:0;
+}
+ 
+/* We change the background color for the level 3 submenu*/
+#menuwrapper ul li:hover ul li:hover ul li{
+    background:#86d3fa;
+}
+ 
+/* We change the background color for the level 3 submenu when hovering the menu */
+#menuwrapper ul li:hover ul li:hover ul li:hover{
+    background:#358ebc;
+}
+ 
+/* We change the level 3 link color */
+#menuwrapper ul li:hover ul li:hover ul li a{
+    color:#ffffff;
+}
+ 
+/* Clear float */
+.clear{
+    clear:both;
+}
+figure {
+color: red; width: 20%; 
+background-color: yellow;
+box-shadow: 4px 3px 6px rgba(0,0,0,.6);
+
+}
+.fig {
+display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: center; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #66
+}
+h1 {
+    color: green;
+    font-size: 2.5em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 4px 3px 6px rgba(0,0,0,.6);
+}
+div {
+   text-align: left;
+}
+
+
+
+
+.boxses {
+display: flex;
+justify-content: space-between;
+}
+.boxses {
+    
+flex: 1 1 250px;
+margin: 10px;
+border-radius: 5px;
+padding: 10px 10px 0 10px;
+background-color: rgba(0,0,0,.1);
+}
+

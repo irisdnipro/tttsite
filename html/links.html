@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Гіперпосилання</title>
+	<link rel="shortcut icon" type="image/png" href="../img/icon.png">
+	<style>
+		nav li {
+    		list-style-type: none; /* Убираем маркеры */
+   		}
+   		nav ul {
+    		margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    		padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   		}
+   		.topic1 {
+			color: red;
+		}
+		.topic2 {
+			color: yellow;
+		}
+		.topic3 {
+			color: green;
+		}
+		dt {
+			font-style: italic;
+			font-weight: bold
+		}
+
+	</style>
+</head>
+<body>
+	<a href="../html/">На головну</a>
+	<nav>
+	<ul>
+		<li>Знайомство з HTML і CSS
+			<ul>
+			<li><a href="pochatok.html"> Знайомство з тегами, атрибутами </a></li>
+			<li><a href="https://htmlacademy.ru/courses/299" target="blank">Структура HTML </a></li>
+			<li><a href="https://htmlacademy.ru/courses/301" target="blank"> Розмітка </a></li>
+			<li><a href="html/spisky.html"> Списки</a></li>
+				<li><a href="html/tabs.html"> </a></li>
+			</ul>
+		</li>
+		<li> Мультимедіа та гіперпосилання
+	<ul type = "square">
+			<li><!-- <a href="links.html"> -->гіперпосилання <!-- </a> --></li>
+			<li><a href="picture.html"> Графічні зображення</a></li>
+		    <li><a href="media.html" title="скоро буде :)"> Відео та звук</a></li>
+	</ul type = "square">
+		</li>
+		</ul>
+	</nav>
+<article>
+	<ol type = "I" start =  "2">
+	 	<li class="topic1">Частина1</li>
+	 	<li class="topic2">Частина2</li>
+	 	<li class="topic3">Частина3</li>
+	 </ol> 
+</article>
+
+
+	<div>
+	<dl>
+		<dt>Тег</dt> 
+           <dd>− це  спеціальний символ розмітки, який застосовується 
+        для вставки різних елементів на веб-сторінку таких як: малюнки, таблиці, 
+        посилання та ін., і для зміни їх виду.</dd> 
+        
+        <dt>HTML-документ</dt> 
+           <dd>− це звичайний текстовий файл, який може містити в
+         собі текст, теги і стилі. Зображення та інші об'єкти зберігаються окремо. 
+         Вміст такого файлу зазвичай називається HTML-кодом.</dd> 
+        
+         <dt>Сайт</dt> 
+          <dd>− це набір окремих веб-сторінок, які пов'язані між 
+        собою посиланнями і єдиним оформленням.</dd> 
+      </dl>
+	</div>
+	<p><a href="picture.html#aaa"> Останній обзац картинок</a></p>
+</body>
+</html>

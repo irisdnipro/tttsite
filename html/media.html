@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Відео та звук</title>
+	<style>
+		nav li {
+    		list-style-type: none; /* Убираем маркеры */
+   		}
+   		nav ul {
+    		margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    		padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   		}
+   		.topic1 {
+			color: red;
+		}
+		.topic2 {
+			color: yellow;
+		}
+		.topic3 {
+			color: green;
+		}
+		dt {
+			font-style: italic;
+			font-weight: bold
+		}
+
+	</style>
+</head>
+<body>
+	<a href="../html/">На головну</a>
+	<nav>
+	<ul>
+		<li>Знайомство з HTML і CSS
+			<ul>
+			<li><a href="pochatok.html"> Знайомство з тегами, атрибутами </a></li>
+			<li><a href="https://htmlacademy.ru/courses/299" target="blank">Структура HTML </a></li>
+			<li><a href="https://htmlacademy.ru/courses/301" target="blank"> Розмітка </a></li>
+			<li><a href="html/spisky.html"> Списки</a></li>
+				<li><a href="html/tabs.html"> </a></li>
+			</ul>
+		</li>
+		<li> Мультимедіа та гіперпосилання
+	<ul type = "square">
+			<li><a href="links.html"> </a></li>
+			<li><a href="picture.html"> Графічні зображення</a></li>
+		    <li><!-- <a href="media.html" title="скоро буде :)"> --> Відео та звук<!-- </a> --></li>
+	</ul type = "square">
+		</li>
+		</ul>
+	</nav>
+<div>
+	<audio src="../audio/vivaldi-antonio_-_palladio.mp3"controls></audio>
+</div>
+<hr>
+<div>
+	<video width="400" height="300" controls="controls">
+ <source src="../video/monkey.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8mK5aY5YOCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
